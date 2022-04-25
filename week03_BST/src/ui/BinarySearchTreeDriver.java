@@ -1,7 +1,7 @@
 package ui;
 
 import domain.BinarySearchTree;
-
+import java.util.*;
 public class BinarySearchTreeDriver {
 
 	public static void main(String[] args) {
@@ -13,6 +13,10 @@ public class BinarySearchTreeDriver {
 		boom.addNode(7);
 		boom.addNode(9);
 
+		printBoomInfo(boom);
+		boom.removeNode(7);
+		printBoomInfo(boom);
+		boom.removeNode(6);
 		printBoomInfo(boom);
 
 		
